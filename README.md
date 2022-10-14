@@ -12,7 +12,12 @@ The Flask app that will be used for this project consists of a simple API with t
 
 The app relies on a secret set as the environment variable `JWT_SECRET` to produce a JWT. The built-in Flask server is adequate for local development, but not production, so you will be using the production-ready [Gunicorn](https://gunicorn.org/) server when deploying the app.
 
-
+An environment file should be created, but has not been added to the repo as per best practice.
+```bash
+(venv) ➜  fsnd-cd0157-container git:(main) cat .env_file 
+JWT_SECRET='myjwtsecret'
+LOG_LEVEL=DEBUG
+```
 
 ## Prerequisites
 
